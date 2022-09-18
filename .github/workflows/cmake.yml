@@ -40,7 +40,7 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       run: |
         mkdir fktx
-        sudo chmod +x build/bin/fxtx
+        sudo chmod +x build/bin/fktx
         cp build/bin/fktx fktx/
         cp config.yml fktx/
         tar -czf fktx.tar.gz fktx
